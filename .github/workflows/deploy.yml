@@ -14,11 +14,11 @@ jobs:
     - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5  # Popular FTP action from GitHub Marketplace
       with:
-        server: ${{ secrets.espisdemos.com }}
-        username: ${{ secrets.designs@espisdemos.com }}
-        password: ${{ secrets.sFs7^Lx^Wa9s }}
+        server: ${{ espisdemos.com }}
+        username: ${{ designs@espisdemos.com }}
+        password: ${{ sFs7^Lx^Wa9s }}
         local-dir: ./  # Local folder to upload (root of your repo)
-        server-dir: ${{ secrets.https://espisdemos.com/DESIGN/menasasi/10-28-2025/ }}  # Remote folder on host
+        server-dir: ${{ https://espisdemos.com/DESIGN/menasasi/10-28-2025/ }}  # Remote folder on host
         exclude: |  # Optional: Skip these files/folders
           **/.git*
           **/.github*
