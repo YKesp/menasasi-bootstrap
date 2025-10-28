@@ -18,7 +18,7 @@ jobs:
         username: designs@espisdemos.com  # e.g., designs@espisdemos.com
         password: sFs7^Lx^Wa9s  # e.g., 
         local-dir: ./  # Local folder to upload (root of your repo)
-        server-dir: https://espisdemos.com/DESIGN/menasasi/10-28-2025  # e.g., /DESIGN/menasasi/10-28-2025/
+        server-dir: https://espisdemos.com/DESIGN/menasasi/10-28-2025/  # e.g., /DESIGN/menasasi/10-28-2025/
         exclude: |  # Optional: Skip these files/folders
           **/.git*
           **/.github*
