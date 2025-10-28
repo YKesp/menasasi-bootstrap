@@ -1,5 +1,4 @@
 .main-carousel {
-  margin-top: -197px;
   background: #fff;
   color: #fff;
   @media screen and (max-width: 767px) {
@@ -14,6 +13,11 @@
       .inner{
         opacity: 1;
       }
+    }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
     }
   }
   .buttons-outer{
@@ -63,7 +67,6 @@
   }
   .caption {
     text-align: center;
-    padding-top: 345px;
     @media screen and (min-width:768px){
       position: absolute;
       left: 0;
@@ -72,29 +75,7 @@
       top: 50%;
       transform: translateY(-50%);
       text-align: start;
-      padding-top:140px;
-    }
-    @media screen and (min-width:1199px){
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: start;
-      padding-top: 196px;
-    }
-    @media screen and (min-width:1599px){
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: start;
-      padding-top: 196px;
-      }
-      
+    } 
     .inner{
       max-width:640px;
       @media screen and (max-width: 767px) {
@@ -119,15 +100,15 @@
       }
     }
     @media screen and (max-width: 767px) {
-      background: var(--dark);
+      background: var(--primary);
       padding: 20px;
       color: #fff;
     }
     
   }
   @media screen and (max-width: 767px) {
-    img{
-      margin-left:-23%;
+    br{
+      display: none;
     } 
   }
 }

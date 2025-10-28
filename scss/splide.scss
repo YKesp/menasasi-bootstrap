@@ -1,10 +1,8 @@
-.splide.palletslider {
+.splide.teamslider {
+  padding-top: 80px;
+  margin-top: -80px;
   .splide__track{
-    padding: 40px 20px !important;
-    margin: -40px -20px !important;
-    @media screen and (max-width:1350px){
-      margin: -40px 20px !important;
-    }
+   
   }
   .splide__slide {
     position: relative;
@@ -13,109 +11,23 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    .image{
-      background: #FCE3C7;
-      display: flex;
-      justify-content: center;
-      min-width:48%;
-    }
-    .inner{
-      background: #fff;
-      box-shadow: 0px 16px 40px rgba(1, 59, 45, 0.1);
-      border-radius: 10px;
-      margin: 0 0 20px;
-      overflow: hidden;
-      .text{
-        padding:20px 15px;
-        font-size: 16px;
-        line-height: 1.5;
-        @media screen and (max-width:1199px){
-          font-size: 14px;
-          line-height: 1.3;
-        }
-        p:last-child{
-          margin: 0;
-        }
-      }
-    }
-    h3 {
-      font-family: "Rajdhani", serif;
-      text-transform: uppercase;
-      color: var(--dark);
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.1;
-      margin: 0 0 10px;
-      @media screen and (min-width:991px){
-          width: fit-content; /* Adjust width as needed */
-          max-width: 16ch; /* Limit line length to 15 characters */
-          overflow-wrap: break-word; /* Break long words */
-          word-wrap: break-word; /* For older browsers */
-          word-break: break-word; /* Add word-breaking behavior */
-          white-space: normal; /* Allow wrapping */
-      }
-      @media screen and (max-width:1199px){
-        font-size: 20px;
-        line-height: 1.1;
-      }
-    }
-    .customer{
-      color: #808080;
-      font-size: 18px;
-      display: block;
-    }
-    p {
-      margin: 0 0 30px;
-    }
-    .star-rating {
-      display: inline-flex;
-      font-size: 1.3rem;
-      color: #209F2E;
-      .star {
-        margin: 0 1px;
-      }
-      .star.full {
-        color: #209F2E;
-      }
-      .star.empty {
-        color: lightgray;
-      }
-  }
-  .foot{
-    border-top: 1px solid #D9D9D9;
-    padding-top: 25px;
-    font-size: 16px;
-    font-family: "Hanken Grotesk", serif;
-  }
   }
   .splide__arrows{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap:10px;
     button{
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        border: 1px solid #fff;
+        border: 1px solid #000;
         background: transparent;
         opacity: 1;
-        color: #fff;
+        color: #000;
+        position: static;
         span{font-size: 11px;}
-        &.splide__arrow--prev{
-          left:-70px;
-          @media screen and (max-width:1350px){
-            left:-38px;
-          }
-           @media screen and (max-width:767px){
-            left:-8px;
-          }
-        }
-        &.splide__arrow--next{
-          right:-70px;
-          @media screen and (max-width:1350px){
-            right:-38px;
-          }
-          @media screen and (max-width:767px){
-            right:-8px;
-          }
-        }
         &:hover{
             color: var(--primary);
             background: #fff;
@@ -123,35 +35,7 @@
     }
   }
 }
-.splide__pagination{
-  bottom: -0.5rem !important;
-  display: none !important;
-  li{
-    width: 17px !important;
-    height: 17px !important;
-    border-radius: 50%;
-    border: 1px solid transparent;
-    line-height: 0 !important;
-    display: flex !important;
-    justify-content: center;
-    margin: 0 2px !important;
-    &.is_active {
-      border-color: #209F2E !important;
-    }
-  }
-.splide__pagination__page{
-  background: var(--primary) !important;
-  min-width: 15px !important;
-  width: 15px !important;
-    height: 15px !important;
-    margin: 0 !important;
-    opacity: 1 !important;
-    border: 5px solid #fff;
-  &.is-active {
-    transform: scale(1) !important;
-    z-index: 1;
-  }
-}}
+
 .splide{
   visibility: visible !important;
 
@@ -194,10 +78,4 @@
 .splide__slide img {
   touch-action: pan-y; /* Allow vertical scrolling */
 }
-
-.palletsslider {
-  .splide__arrow--prev{left: 0;}
-   .splide__arrow--next{right: 0;}
-}
-
 .splide__slide__row{margin-bottom: 0 !important;}

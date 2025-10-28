@@ -19,15 +19,17 @@
                     <a href="mailto:info@menasasi.org" class="d-flex gap-2 align-items-center email-link">
                         <i class="fas fa-envelope"></i><span class="d-none d-md-inline-block">info@menasasi.org</span></a>
                     <div class="d-flex align-items-center gap-2 gap-md-3">
-                        <form action="">
-                            <div class="search">
-                                <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+                        <form action="#" role="search" method="get" class="search-form">
+                            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+                            <div class="search-input-wrapper">
+                                <div class="field"><input type="text" class="search-input" placeholder="Search..." value="" name="s"></div>
+                                <button type="submit" class="search-button search-link2 search-submit"><i class="fas fa-search"></i></button>
                             </div>
                         </form>
                         <a href="#" class="login-link"><i class="far fa-user"></i></a>
                         <ul class="social-media d-flex list-unstyled m-0">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>

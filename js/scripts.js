@@ -118,62 +118,21 @@ navItems.forEach(navItem => {
       });
   }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var palletSlider = document.querySelector(".palletslider");
-
-    if (palletSlider) {
-      var splide = new Splide(palletSlider, {
-        type: false,
-        perPage: 1, // Each slide contains a 2x2 grid
-        focus: 0,
-        pagination: true,
-        autoplay: false,
-        interval: 3000,
-        speed: 1000,
-        arrows: true,
-        gap: "24px",
-        grid: {
-          dimensions: [[2, 2]], // 2 rows x 2 columns
-          gap: {
-            row: "10px",
-            col: "10px",
-          },
-        },
-        breakpoints: {
-          1350: {
-            grid: {
-              dimensions: [[1, 2]], // 2 rows, 1 column on medium screens
-            },
-          },
-          991: {
-            grid: {
-              dimensions: [[1, 1]], // 1 row, 1 column on small screens
-            },
-            pagination: false,
-            autoplay: true,
-          },
-        },
-      });
-
-      splide.mount(window.splide.Extensions);
-    }
-
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".servicesslider", {
-    perPage: 4,
+  var splide = new Splide(".teamslider", {
+    perPage: 3,
     focus: 0,
     omitEnd: true,
     swipeThreshold: 50, // Higher value reduces interference
     flickPower: 300, // Adjust flick sensitivity
-    type: "loop",
-    pagination: true, // Disable pagination
+    type: "slide",
+    pagination: false, // Disable pagination
     autoplay: false, // Enable autoplay
     interval: 3000, // Set interval time in milliseconds (e.g., 3000 = 3 seconds)
     speed: 1000,
-    gap: '24px', // Set transition speed in milliseconds (e.g., 1000 = 1 second)
+    gap: '16px', // Set transition speed in milliseconds (e.g., 1000 = 1 second)
     breakpoints: {
       1350: {
         perPage: 3, // Number of slides for tablet view (768px width and above)
@@ -198,52 +157,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".clientsslider", {
-    perPage: 4,
-    focus: 0,
-    omitEnd: true,
-    type: "loop",
-    swipeThreshold: 50, // Higher value reduces interference
-    flickPower: 300, // Adjust flick sensitivity
-    pagination: false, // Disable pagination
-    autoplay: false, // Enable autoplay
-    interval: 3000, // Set interval time in milliseconds (e.g., 3000 = 3 seconds)
-    speed: 1000,
-    gap: '24px', // Set transition speed in milliseconds (e.g., 1000 = 1 second)
-    breakpoints: {
-      1350: {
-        perPage: 3, // Number of slides for tablet view (768px width and above)
-      },
-      991: {
-        perPage: 2, // Number of slides for mobile view (576px width and above)
-        pagination: false,
-        autoplay: true,
-      },
-      639: {
-        perPage: 2, // Number of slides for mobile view (576px width and above)
-        pagination: false,
-        autoplay: true,
-      }
-    }
-  });
-  splide.mount();
-
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth <= 768) { 
-  var splide = new Splide(".palletsslider", {
+  var splide = new Splide(".newsslider", {
     perPage: 1,
     focus: 0,
     omitEnd: true,
-    type: "loop",
     swipeThreshold: 50, // Higher value reduces interference
     flickPower: 300, // Adjust flick sensitivity
+    type: "loop",
     pagination: false, // Disable pagination
     autoplay: false, // Enable autoplay
     interval: 3000, // Set interval time in milliseconds (e.g., 3000 = 3 seconds)
     speed: 1000,
-    gap: '0', // Set transition speed in milliseconds (e.g., 1000 = 1 second)
+    gap: '16px', // Set transition speed in milliseconds (e.g., 1000 = 1 second)
     breakpoints: {
       1350: {
         perPage: 1, // Number of slides for tablet view (768px width and above)
@@ -260,10 +185,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+    
+  
+   
   splide.mount();
-  }
-});
 
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchLink = document.querySelector(".search-link");
