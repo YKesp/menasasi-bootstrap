@@ -15,14 +15,6 @@
             <h1 class="text-white">About Us</h1>
         </div>
     </div>
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About Us</li>
-            </ol>
-        </nav>
-    </div>
     <main id="main">
     <section class="block intro-block about-block">
             <div class="container">
@@ -41,7 +33,7 @@
         </section>
         <section class="block video-block">
             <div class="container">
-                <h2 class="text-center text-white text-uppercase mb-5">About the company</h2>
+                <h2 class="text-dark text-uppercase mb-5">About the company</h2>
                 <div class="video-holder">
                     <img src="images/video-image.jpg" class="img-fluid" alt="video-image.jpg">
                     <a href="https://www.youtube.com/watch?v=nCIMf7yZUmk" class="btn-play">Play</a>

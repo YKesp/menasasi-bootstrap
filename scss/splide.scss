@@ -27,6 +27,10 @@
         opacity: 1;
         color: #000;
         position: static;
+        @media screen and (max-width:767px){
+           width: 30px;
+          height: 30px;
+        }
         span{font-size: 11px;}
         &:hover{
             color: var(--primary);

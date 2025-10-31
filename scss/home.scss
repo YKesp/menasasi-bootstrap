@@ -64,13 +64,21 @@ $body-color: #111;
 
 .block {
   padding: 85px 0;
-
+   @media screen and (max-width:1199px){
+       padding: 45px 0;
+    }
+     @media screen and (max-width:767px){
+       padding: 25px 0;
+    }
   .head {
     margin-bottom: 45px;
   }
 
   .subtext {
     padding-left: 30px;
+     @media screen and (max-width:1199px){
+         padding-left: 0;
+     }
   }
 
   h2 {
@@ -82,6 +90,13 @@ $body-color: #111;
     padding-left: 30px;
     position: relative;
     margin: 0 0 32px;
+     @media screen and (max-width:1199px){
+        font-size: 40px;
+        padding-left: 0;
+     }
+     @media screen and (max-width:991px){
+        font-size: 30px;
+     }
 
     &:after {
       width: 127px;
@@ -107,6 +122,7 @@ $body-color: #111;
   }
 
   &.intro-block {
+    background: url(../images/bg-design.png) 0 -150px no-repeat;
     position: relative;
     z-index: 1;
 
@@ -124,10 +140,14 @@ $body-color: #111;
         width: 100%;
         height: 100%;
         z-index: -1;
+         @media screen and (max-width:1199px){
+            top: 10px;
+            left: 10px;
+        }
       }
 
       img {
-        border-radius: 30px;
+        border-radius: 18px;
       }
 
       .year {
@@ -138,6 +158,17 @@ $body-color: #111;
         right: -64px;
         bottom: -40px;
         text-indent: -9999px;
+        @media screen and (max-width:1199px){
+            right: -44px;
+          bottom: -35px;
+        }
+         @media screen and (max-width:991px){
+          width: 110px;
+          height: 110px;
+          background-size: cover;
+          right: -30px;
+          bottom: -30px;
+        }
       }
     }
 
@@ -149,6 +180,9 @@ $body-color: #111;
       align-items: center;
       text-decoration: none;
       gap: 10px;
+      @media screen and (max-width: 1199px) {
+        font-size: 18px;
+      }
 
       &:hover {
         color: var(--light);
@@ -172,16 +206,30 @@ $body-color: #111;
     ul {
       font-size: 14px;
       display: flex;
+      flex-wrap: wrap;
+       @media screen and (max-width:639px){
+        font-size: 12px;
+        }
 
       li {
         padding: 0 10px;
         padding-left: 36px;
         position: relative;
         border-left: 1px solid #000;
+        @media screen and (max-width:639px){
+          min-width: 50%;
+           padding: 5px 10px;
+            padding-left: 32px;
+        }
 
         &:first-child {
           border: 0;
         }
+        @media screen and (max-width:639px){
+         &:nth-child(3) {
+          border: 0;
+        }
+      }
 
         &:before {
           position: absolute;
@@ -267,6 +315,9 @@ $body-color: #111;
 
   .event-body {
     padding: 15px 30px;
+    @media screen and (max-width:639px){
+      padding: 10px 15px;
+    }
   }
 
   .events {
@@ -363,21 +414,70 @@ $body-color: #111;
   padding-right: 999px;
   margin-right: -999px;
   overflow: hidden;
-  padding-bottom: 30px;
 
   .splide__track {
     overflow: visible;
      max-width: 840px;
+     @media screen and (max-width:991px){
+      overflow: hidden;
+     }
+  }
+  .outer-control{
+    padding:70px 0 30px;
+    position: relative;
+    &:after{
+      background: linear-gradient(to right,  rgba(199,148,22,1) 0%,rgba(0,32,91,1) 48%,rgba(7,31,88,1) 50%,rgba(170,10,18,0.03) 100%);
+      width:55%;
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      content: '';
+      z-index: 1;
+       @media screen and (max-width:991px){
+        background: linear-gradient(to right,  rgba(199,148,22,0.03) 0%,rgba(0,32,91,1) 68%,rgba(7,31,88,1) 50%,rgba(170,10,18,0.03) 100%);
+        width:25%;
+      }
+      @media screen and (max-width:767px){
+        display: none;
+      }
+    }
+  }
+  .splide__arrows{
+      display: flex;
+      gap:20px;
+    .splide__arrow{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background: transparent;
+        opacity: 1;
+        color: #000;
+        position: static;
+        transform: none;
+        span{font-size: 11px;}
+        &:hover{
+            color: var(--primary);
+            background: #fff;
+        }
+    }
   }
   .splide__slide {
     .text{
       padding:58px 15px 35px 32px;
       background: #fff;
       box-shadow: 7px 20px 11px rgba(0, 0, 0, 0.07);
+       @media screen and (max-width:991px){
+      padding:30px 15px;
+     }
       h3{
         font-size: 28px;
         font-weight: 400;
         text-transform: capitalize;
+         @media screen and (max-width:991px){
+          font-size: 21px;
+        }
       }
       time{
         background: #F6C549;
@@ -414,10 +514,16 @@ $body-color: #111;
     }
     .image{
       min-width: 270px;
+      @media screen and (max-width:991px){
+           display: none;
+          }
       img{
         height: 100%;
         width: 100%;
         object-fit: cover;
+         @media screen and (max-width:991px){
+             height: auto;
+          }
       }
     }
   }
